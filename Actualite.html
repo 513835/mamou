@@ -102,6 +102,64 @@
         font-style: oblique;
         color: #1a1a2e;
     }
+   @media (max-width: 768px) {
+    /* Empiler les éléments verticalement */
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .contenu {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .contenu img {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .logo img {
+        height: 10vh;
+        width: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    
+nav ul li{
+        margin: 10px 0;
+            text-align: center;
+    }
+
+    input[type="search"] {
+        width: 100%;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+}
+
 </style>
 
 <body>
@@ -115,7 +173,7 @@
         <nav>
             <ul>
                 <li><a href="index.html"><i class="fa-solid fa-house"></i>Accueil</a></li>
-                <li><a href="Actualité.html"><i class="fa-solid fa-circle-info"></i>Actualité</a></li>
+                <li><a href="Actualite.html"><i class="fa-solid fa-circle-info"></i>Actualité</a></li>
                 <li><a href="produits.html"><i class="fa-brands fa-product-hunt"></i>Produits</a></li>
                 <li><a href="contact.html"><i class="fa-solid fa-id-badge"></i>Contact</a></li>
             </ul>
